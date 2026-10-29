@@ -1,0 +1,17 @@
+﻿node_modules/
+.env
+.env.*
+!.env.example
+
+# Log lokal
+*.log
+
+# Backup lokal
+backup-*/
+*.backup
+*.bak
+*.backup-*
+*.before-*.bak
+
+# Data operasional masjid bersifat lokal
+data/

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Panel Admin Masjid</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="admin-body">
+  <main class="admin-wrap">
+    <header class="admin-header">
+      <div>
+        <p class="eyebrow">HUITeKNO · PROTOTIPE MVP</p>
+        <h1>Pengaturan Informasi Masjid</h1>
+        <p class="muted">Perubahan disimpan pada server lokal dan akan tampil di layar TV.</p>
+      </div>
+      <a class="button secondary" href="/tv" target="_blank" rel="noreferrer">Buka Tampilan TV</a>
+    </header>
+
+    <form id="adminForm" class="form-card">
+      <label>Nama masjid<input id="mosqueName" maxlength="120" required></label>
+      <label>Lokasi / alamat<input id="location" maxlength="200"></label>
+
+      <section>
+        <h2>Jadwal salat</h2>
+        <div class="prayer-grid" id="prayerFields"></div>
+        <p class="hint">Jadwal ini masih diisi manual untuk prototipe. Verifikasi waktu setempat sebelum dipakai sungguhan.</p>
+      </section>
+
+      <section class="admin-friday">
+        <h2>Jadwal Pelaksanaan Jumat</h2>
+        <label>Tanggal Jumat<input id="fridayDate" type="date"></label>
+        <label>Nama khatib<input id="khatib" maxlength="200"></label>
+        <label>Nama imam<input id="imam" maxlength="200"></label>
+        <label>Nama bilal<input id="bilal" maxlength="200"></label>
+      </section>
+      <label>Jadwal Wirid Mingguan<textarea id="wirid" rows="2" maxlength="500"></textarea></label>
+      <label>Pengumuman<textarea id="announcement" rows="2" maxlength="500"></textarea></label>
+      <label>Ayat / hadis<textarea id="verse" rows="3" maxlength="700"></textarea></label>
+      <label>Ringkasan keuangan<textarea id="finance" rows="2" maxlength="500"></textarea></label>
+
+      <div class="form-actions">
+        <button type="submit" class="button">Simpan perubahan</button>
+        <span id="status" role="status" class="status"></span>
+      </div>
+    </form>
+    <footer class="footer-note">Prototipe lokal · Jangan buka ke internet publik sebelum keamanan dan autentikasi diterapkan.</footer>
+  </main>
+  <script src="/admin.js"></script>
+</body>
+</html>

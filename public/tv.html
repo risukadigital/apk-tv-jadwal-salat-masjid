@@ -1,0 +1,47 @@
+﻿<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tampilan TV Masjid</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body class="tv-body">
+  <main class="tv-screen">
+    <header class="tv-top">
+      <div>
+        <p class="tv-kicker">INFORMASI MASJID</p>
+        <h1 id="tvMosqueName">Masjid Kita</h1>
+        <p id="tvLocation" class="tv-location"></p>
+      </div>
+      <div class="clock-block">
+        <div id="clock" class="clock">00:00:00</div>
+        <div id="date" class="date"></div>
+      </div>
+    </header>
+    <div class="verse-ticker" aria-label="Ayat dan hadis">
+      <span class="verse-ticker-label">AYAT / HADIS</span>
+      <div class="verse-ticker-window"><p id="tvVerse"></p></div>
+    </div>
+    <section class="tv-prayers" id="tvPrayers"></section>
+    <section class="tv-info-grid">
+      <article class="tv-panel friday-panel">
+        <h2>Jadwal Pelaksanaan Jumat</h2>
+        <div class="friday-row"><span>Tanggal</span><strong id="tvFridayDate">—</strong></div>
+        <div class="friday-row"><span>Khatib</span><strong id="tvKhatib">—</strong></div>
+        <div class="friday-row"><span>Imam</span><strong id="tvImam">—</strong></div>
+        <div class="friday-row"><span>Bilal</span><strong id="tvBilal">—</strong></div>
+      </article>
+      <article class="tv-panel wirid-panel">
+        <h2>Jadwal Wirid Mingguan</h2><p id="tvWirid"></p>
+      </article>
+      <article class="tv-panel highlight announcement-panel">
+        <h2>Pengumuman</h2><p id="tvAnnouncement"></p>
+      </article>
+    </section>
+    <footer class="tv-footer"><span>Semoga Allah memberkahi jamaah dan pengurus masjid</span><span id="updated"></span></footer>
+  </main>
+  <script src="/tv.js"></script>
+</body>
+</html>
+

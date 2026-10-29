@@ -1,0 +1,13 @@
+{
+  "name": "apk-tv-jam-jadwal-masjid",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Starter MVP aplikasi informasi masjid untuk layar TV dan panel admin HP melalui jaringan lokal.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
